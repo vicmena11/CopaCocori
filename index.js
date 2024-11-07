@@ -23,22 +23,22 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Ruta para la página de inicio
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views/index.html'));
+    res.sendFile(path.join(__dirname, '/index.html'));
 });
 
 // Ruta para la página de equipos
 app.get('/equipos', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views/equipos.html'));
+    res.sendFile(path.join(__dirname, '/equipos.html'));
 });
 
 // Ruta para /resultados
 app.get('/resultados', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views/resultados.html'));
+    res.sendFile(path.join(__dirname, '/resultados.html'));
 });
 
 // Ruta para /estadisticas
 app.get('/estadisticas', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views/estadisticas.html'));
+    res.sendFile(path.join(__dirname, '/estadisticas.html'));
 });
 
 // Ruta para obtener los equipos desde la base de datos
